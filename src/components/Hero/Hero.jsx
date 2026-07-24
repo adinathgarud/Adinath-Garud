@@ -22,12 +22,33 @@ export default function Hero() {
   return (
     <Box
       sx={{
-        minHeight: "130vh",
-        display: "flex",
-        alignItems: "center",
-        background:
-          "linear-gradient(135deg,#0f172a,#1e293b,#0f172a)",
-      }}
+  width: "100%",
+  minHeight: {
+    xs: "100dvh", // Better for mobile browsers
+    sm: "100vh",
+  },
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  overflow: "hidden",
+  boxSizing: "border-box",
+
+  px: {
+    xs: 2, // 16px
+    sm: 3, // 24px
+    md: 4, // 32px
+    lg: 6, // 48px
+  },
+
+  py: {
+    xs: 10,
+    sm: 12,
+    md: 14,
+  },
+
+  background:
+    "linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%)",
+}}
     >
       <Container maxWidth="lg">
         <Grid
