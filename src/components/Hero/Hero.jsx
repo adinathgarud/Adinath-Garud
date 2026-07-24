@@ -126,42 +126,76 @@ export default function Hero() {
               </Typography>
 
               <Stack
-                direction="row"
-                spacing={2}
-                flexWrap="wrap"
-              >
-                <Button
-                  variant="contained"
-                  size="large"
-                  startIcon={<FaDownload />}
-                >
-                  Resume
-                </Button>
+  direction={{
+    xs: "column",
+    sm: "row",
+  }}
+  spacing={2}
+  useFlexGap
+  sx={{
+    width: "100%",
+    alignItems: {
+      xs: "stretch",
+      sm: "center",
+    },
+  }}
+>
+  <Button
+    variant="contained"
+    size="large"
+    startIcon={<FaDownload />}
+    sx={{
+      width: {
+        xs: "100%",
+        sm: "auto",
+      },
+    }}
+  >
+    Resume
+  </Button>
 
-                <Button
-                  variant="outlined"
-                  size="large"
-                  startIcon={<FaGithub />}
-                >
-                  GitHub
-                </Button>
+  <Button
+    variant="outlined"
+    size="large"
+    startIcon={<FaGithub />}
+    sx={{
+      width: {
+        xs: "100%",
+        sm: "auto",
+      },
+    }}
+  >
+    GitHub
+  </Button>
 
-                <Button
-                  variant="outlined"
-                  size="large"
-                  startIcon={<FaLinkedin />}
-                >
-                  LinkedIn
-                </Button>
+  <Button
+    variant="outlined"
+    size="large"
+    startIcon={<FaLinkedin />}
+    sx={{
+      width: {
+        xs: "100%",
+        sm: "auto",
+      },
+    }}
+  >
+    LinkedIn
+  </Button>
 
-                <Button
-                  variant="outlined"
-                  size="large"
-                  startIcon={<FaEnvelope />}
-                >
-                  Email
-                </Button>
-              </Stack>
+  <Button
+    variant="outlined"
+    size="large"
+    startIcon={<FaEnvelope />}
+    sx={{
+      width: {
+        xs: "100%",
+        sm: "auto",
+      },
+    }}
+  >
+    Email
+  </Button>
+</Stack>
             </motion.div>
           </Grid>
 
