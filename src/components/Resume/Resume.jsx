@@ -46,7 +46,7 @@ export default function Resume() {
             Resume
           </Typography>
 
-          <Typography
+          {/* <Typography
             textAlign="center"
             color="text.secondary"
             sx={{
@@ -60,14 +60,14 @@ export default function Resume() {
             Download or preview my resume to learn more
             about my professional journey, technical
             expertise and projects.
-          </Typography>
+          </Typography> */}
         </motion.div>
 
         <Grid container spacing={6} alignItems="center">
 
           {/* LEFT */}
 
-          <Grid item xs={12} md={6}>
+          {/* <Grid item xs={12} md={6}>
 
             <motion.div
               initial={{ opacity: 0, x: -80 }}
@@ -119,7 +119,7 @@ export default function Resume() {
 
             </motion.div>
 
-          </Grid>
+          </Grid> */}
 
           {/* RIGHT */}
 
@@ -137,13 +137,13 @@ export default function Resume() {
 
             >
 
-              <Typography
+              {/* <Typography
                 variant="h4"
                 fontWeight="bold"
                 gutterBottom
               >
                 Data Engineer Resume
-              </Typography>
+              </Typography> */}
 
               <Typography
                 color="text.secondary"

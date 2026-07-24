@@ -22,33 +22,33 @@ export default function Hero() {
   return (
     <Box
       sx={{
-  width: "100%",
-  minHeight: {
-    xs: "100dvh", // Better for mobile browsers
-    sm: "100vh",
-  },
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  overflow: "hidden",
-  boxSizing: "border-box",
+        width: "100%",
+        minHeight: {
+          xs: "100dvh", // Better for mobile browsers
+          sm: "100vh",
+        },
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        overflow: "hidden",
+        boxSizing: "border-box",
 
-  px: {
-    xs: 2, // 16px
-    sm: 3, // 24px
-    md: 4, // 32px
-    lg: 6, // 48px
-  },
+        px: {
+          xs: 2, // 16px
+          sm: 3, // 24px
+          md: 4, // 32px
+          lg: 6, // 48px
+        },
 
-  py: {
-    xs: 10,
-    sm: 12,
-    md: 14,
-  },
+        py: {
+          xs: 10,
+          sm: 12,
+          md: 14,
+        },
 
-  background:
-    "linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%)",
-}}
+        background:
+          "linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%)",
+      }}
     >
       <Container maxWidth="lg">
         <Grid
@@ -58,7 +58,7 @@ export default function Hero() {
         >
           {/* Left Section */}
 
-          <Grid size={{xs:12, md:7}}>
+          <Grid size={{ xs: 12, md: 7 }}>
             <motion.div
               initial={{ opacity: 0, x: -80 }}
               animate={{ opacity: 1, x: 0 }}
@@ -126,82 +126,95 @@ export default function Hero() {
               </Typography>
 
               <Stack
-  direction={{
-    xs: "column",
-    sm: "row",
-  }}
-  spacing={2}
-  useFlexGap
-  sx={{
-    width: "100%",
-    alignItems: {
-      xs: "stretch",
-      sm: "center",
-    },
-  }}
->
-  <Button
-    variant="contained"
-    size="large"
-    startIcon={<FaDownload />}
-    sx={{
-      width: {
-        xs: "100%",
-        sm: "auto",
-      },
-    }}
-  >
-    Resume
-  </Button>
+                direction={{
+                  xs: "column",
+                  sm: "row",
+                }}
+                spacing={2}
+                useFlexGap
+                sx={{
+                  width: "100%",
+                  alignItems: {
+                    xs: "stretch",
+                    sm: "center",
+                  },
+                }}
+              >
+                <Button
+                  variant="contained"
+                  size="large"
+                  startIcon={<FaDownload />}
+                  onClick={() => window.open("/resume/Adinath_Garud_Resume.pdf", "_blank")}
+                  sx={{
+                    width: {
+                      xs: "100%",
+                      sm: "auto",
+                    },
+                  }}
+                >
+                  Resume
+                </Button>
 
-  <Button
-    variant="outlined"
-    size="large"
-    startIcon={<FaGithub />}
-    sx={{
-      width: {
-        xs: "100%",
-        sm: "auto",
-      },
-    }}
-  >
-    GitHub
-  </Button>
+                <Button
+                  variant="outlined"
+                  size="large"
+                  startIcon={<FaGithub />}
+                  onClick={() =>
+                    window.open("https://github.com/adinathgarud", "_blank")
+                  }
+                  sx={{
+                    width: {
+                      xs: "100%",
+                      sm: "auto",
+                    },
+                  }}
+                >
+                  GitHub
+                </Button>
 
-  <Button
-    variant="outlined"
-    size="large"
-    startIcon={<FaLinkedin />}
-    sx={{
-      width: {
-        xs: "100%",
-        sm: "auto",
-      },
-    }}
-  >
-    LinkedIn
-  </Button>
+                <Button
+                  variant="outlined"
+                  size="large"
+                  startIcon={<FaLinkedin />}
+                  onClick={() =>
+                    window.open(
+                      "https://www.linkedin.com/in/adinath-garud-0498b9242",
+                      "_blank"
+                    )
+                  }
+                  sx={{
+                    width: {
+                      xs: "100%",
+                      sm: "auto",
+                    },
+                  }}
+                >
+                  LinkedIn
+                </Button>
 
-  <Button
-    variant="outlined"
-    size="large"
-    startIcon={<FaEnvelope />}
-    sx={{
-      width: {
-        xs: "100%",
-        sm: "auto",
-      },
-    }}
-  >
-    Email
-  </Button>
-</Stack>
+                <Button
+                  variant="outlined"
+                  size="large"
+                  startIcon={<FaEnvelope />}
+                  onClick={() =>
+                    window.location.href = "adinathgarud123@gmail.com"
+                  }
+                  sx={{
+                    width: {
+                      xs: "100%",
+                      sm: "auto",
+                    },
+                  }}
+                >
+                  Email
+                </Button>
+              </Stack>
             </motion.div>
           </Grid>
 
           {/* Right Section */}
 
-          <Grid size={{xs:12, md:5}}>
+          <Grid size={{ xs: 12, md: 5 }}>
             <motion.div
               initial={{ opacity: 0, scale: 0.7 }}
               animate={{ opacity: 1, scale: 1 }}

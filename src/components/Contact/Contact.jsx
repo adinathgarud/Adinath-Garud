@@ -36,19 +36,19 @@ const contactInfo = [
   {
     icon: <FaPhoneAlt />,
     title: "Phone",
-    value: "+91 XXXXX XXXXX",
+    value: "+91 7558464702",
     color: "#4CAF50",
   },
   {
     icon: <FaLinkedin />,
     title: "LinkedIn",
-    value: "linkedin.com/in/adinath",
+    value: "https://www.linkedin.com/in/adinath-garud-0498b9242",
     color: "#0A66C2",
   },
   {
     icon: <FaGithub />,
     title: "GitHub",
-    value: "github.com/adinath",
+    value: "https://github.com/adinathgarud",
     color: "#ffffff",
   },
 ];

@@ -211,43 +211,43 @@ export default function Skills() {
                   </Typography>
 
                   <Stack
-  direction="row"
-  useFlexGap
-  sx={{
-    flexWrap: "wrap",
-    gap: 1.2,
-    mt: 2,
+                    direction="row"
+                    useFlexGap
+                    sx={{
+                      flexWrap: "wrap",
+                      gap: 1.2,
+                      mt: 2,
 
-    justifyContent: {
-      xs: "center",
-      sm: "center",
-      md: "flex-start",
-    },
-  }}
->
-  {skill.technologies.map((tech) => (
-    <Chip
-      key={tech}
-      label={tech}
-      variant="outlined"
-      sx={{
-        borderRadius: "20px",
-        px: 0.5,
-        fontWeight: 500,
-        color: "white",
-        border: `1px solid ${skill.color}`,
-        transition: "all .3s ease",
+                      justifyContent: {
+                        xs: "center",
+                        sm: "center",
+                        md: "flex-start",
+                      },
+                    }}
+                  >
+                    {skill.technologies.map((tech) => (
+                      <Chip
+                        key={tech}
+                        label={tech}
+                        variant="outlined"
+                        sx={{
+                          borderRadius: "20px",
+                          px: 0.5,
+                          fontWeight: 500,
+                          color: "white",
+                          border: `1px solid ${skill.color}`,
+                          transition: "all .3s ease",
 
-        "&:hover": {
-          backgroundColor: skill.color,
-          color: "#fff",
-          transform: "translateY(-2px)",
-          boxShadow: `0 8px 20px ${skill.color}40`,
-        },
-      }}
-    />
-  ))}
-</Stack>
+                          "&:hover": {
+                            backgroundColor: skill.color,
+                            color: "#fff",
+                            transform: "translateY(-2px)",
+                            boxShadow: `0 8px 20px ${skill.color}40`,
+                          },
+                        }}
+                      />
+                    ))}
+                  </Stack>
 
                 </Paper>
 
