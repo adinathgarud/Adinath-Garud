@@ -1,3 +1,5 @@
+import { Box } from "@mui/material";
+
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
@@ -11,47 +13,92 @@ import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
-    <>
+    <Box
+      sx={{
+        width: "100%",
+        minHeight: "100vh",
+        overflowX: "hidden",
+        overflowY: "auto",
+        position: "relative",
+        boxSizing: "border-box",
+      }}
+    >
       <Navbar />
 
-      <main>
-
-        <section id="home">
+      <Box
+        component="main"
+        sx={{
+          width: "100%",
+          overflow: "hidden",
+        }}
+      >
+        <Box
+          component="section"
+          id="home"
+          sx={{ width: "100%" }}
+        >
           <Hero />
-        </section>
+        </Box>
 
-        <section id="about">
+        <Box
+          component="section"
+          id="about"
+          sx={{ width: "100%" }}
+        >
           <About />
-        </section>
+        </Box>
 
-        <section id="skills">
+        <Box
+          component="section"
+          id="skills"
+          sx={{ width: "100%" }}
+        >
           <Skills />
-        </section>
+        </Box>
 
-        <section id="experience">
+        <Box
+          component="section"
+          id="experience"
+          sx={{ width: "100%" }}
+        >
           <Experience />
-        </section>
+        </Box>
 
-        <section id="projects">
+        <Box
+          component="section"
+          id="projects"
+          sx={{ width: "100%" }}
+        >
           <Projects />
-        </section>
+        </Box>
 
-        <section id="certifications">
+        <Box
+          component="section"
+          id="certifications"
+          sx={{ width: "100%" }}
+        >
           <Certifications />
-        </section>
+        </Box>
 
-        <section id="resume">
+        <Box
+          component="section"
+          id="resume"
+          sx={{ width: "100%" }}
+        >
           <Resume />
-        </section>
+        </Box>
 
-        <section id="contact">
+        <Box
+          component="section"
+          id="contact"
+          sx={{ width: "100%" }}
+        >
           <Contact />
-        </section>
-
-      </main>
+        </Box>
+      </Box>
 
       <Footer />
-    </>
+    </Box>
   );
 }
 

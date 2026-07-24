@@ -22,7 +22,7 @@ export default function Hero() {
   return (
     <Box
       sx={{
-        minHeight: "100vh",
+        minHeight: "130vh",
         display: "flex",
         alignItems: "center",
         background:
