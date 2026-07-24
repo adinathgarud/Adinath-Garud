@@ -145,21 +145,41 @@ export default function About() {
               </Stack>
 
               <Stack
-                direction="row"
-                spacing={2}
-                mt={5}
-                flexWrap="wrap"
-                useFlexGap
-              >
-                <Chip label="Python" color="primary"/>
-                <Chip label="SQL" color="primary"/>
-                <Chip label="PySpark" color="primary"/>
-                <Chip label="Databricks" color="primary"/>
-                <Chip label="Azure" color="primary"/>
-                <Chip label="ETL" color="primary"/>
-                <Chip label="Git" color="primary"/>
-                <Chip label="ReactJS" color="primary"/>
-              </Stack>
+  direction="row"
+  useFlexGap
+  sx={{
+    mt: 5,
+    flexWrap: "wrap",
+    gap: 1.2,
+    justifyContent: {
+      xs: "center",
+      sm: "center",
+      md: "flex-start",
+    },
+  }}
+>
+  {[
+    "Python",
+    "SQL",
+    "PySpark",
+    "Databricks",
+    "Azure",
+    "ETL",
+    "Git",
+    "ReactJS",
+  ].map((skill) => (
+    <Chip
+      key={skill}
+      label={skill}
+      color="primary"
+      variant="outlined"
+      sx={{
+        borderRadius: "20px",
+        fontWeight: 500,
+      }}
+    />
+  ))}
+</Stack>
 
             </motion.div>
 

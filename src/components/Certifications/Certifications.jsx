@@ -284,10 +284,18 @@ export default function Certifications() {
 
                   <Stack
                     direction="row"
-                    spacing={1}
-                    useFlexGap
-                    flexWrap="wrap"
-                    mb={4}
+  useFlexGap
+  sx={{
+    flexWrap: "wrap",
+    gap: 1.2,
+    mt: 2,
+
+    justifyContent: {
+      xs: "center",
+      sm: "center",
+      md: "flex-start",
+    },
+  }}
                   >
 
                     {cert.skills.map((skill) => (

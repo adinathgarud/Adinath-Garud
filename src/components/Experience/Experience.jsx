@@ -214,10 +214,18 @@ export default function Experience() {
 
                   <Stack
                     direction="row"
-                    spacing={1}
-                    useFlexGap
-                    flexWrap="wrap"
-                    mt={4}
+  useFlexGap
+  sx={{
+    flexWrap: "wrap",
+    gap: 1.2,
+    mt: 2,
+
+    justifyContent: {
+      xs: "center",
+      sm: "center",
+      md: "flex-start",
+    },
+  }}
                   >
 
                     {exp.technologies.map((tech) => (
